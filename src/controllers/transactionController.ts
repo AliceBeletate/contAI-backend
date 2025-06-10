@@ -20,24 +20,3 @@ export class TransactionController {
         return res.json(transactions)
     }
 }
-
-
-
-/* Cliente envia requisição para /transactions.
-
-transaction.routes.ts passa para TransactionController.
-
-TransactionController:
-➡️ Recebe a requisição.
-➡️ Chama o TransactionService.
-➡️ Responde para o cliente com resultado ou erro. 
-
-
-
-
-
-if (error instanceof Error) {
-➡️ Checa se o error é de fato um objeto Error do JavaScript.
-
-➡️ Se sim, podemos acessar com segurança:
-error.message.*/

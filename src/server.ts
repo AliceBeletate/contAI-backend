@@ -1,16 +1,14 @@
 import app from './app';
-import {AppDataSource} from './database/data-source';
+import { AppDataSource } from './database/data-source';
 
 AppDataSource.initialize()
-.then (() => {
+  .then(() => {
     console.log('Database connected');
 
-
-    app.listen(3000, () => {
-        console.log('Server running on port 3000');
+    app.listen(3333, () => {
+      console.log('Server running on port 3333');
     });
-})
-
-.catch((err: unknown) => {
+  })
+  .catch((err: unknown) => {
     console.log('Database connection error:', err);
-});
+  });
